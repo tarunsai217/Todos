@@ -1,0 +1,59 @@
+.todos-container {
+  margin-bottom: 2rem;
+
+  .no-todos {
+    padding: 1rem;
+    background-color: var(--no-todos-color);
+    color: var(--no-todos-text-color);
+    font-weight: 700;
+    font-size: 0.75rem;
+    border-radius: 10px;
+  }
+  .todos {
+    padding: 1rem;
+    border: 2px solid var(--todos-border-color);
+    border-radius: 10px;
+    min-width: 500px;
+
+    .todo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+      padding-bottom: 0.5rem;
+      .text {
+        color: var(--todo-text-color);
+      }
+      .bin-icon-wrapper {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--icon-color);
+        cursor: pointer;
+        svg {
+          fill: var(--del-icon-color);
+        }
+        &:hover {
+          background-color: var(--icon-hover-color);
+        }
+      }
+    }
+
+    & > * {
+      border-bottom: 1px solid black;
+    }
+
+    & > :last-child {
+      border-bottom: none !important;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    & > :first-child {
+      margin-top: 0;
+    }
+  }
+}
