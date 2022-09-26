@@ -1,7 +1,8 @@
 .add-todo {
   display: flex;
   input {
-    padding: 0.75rem;
+    width: 300px;
+    padding: 0.85rem;
     border: none;
     border-radius: 0.25rem;
     background-color: var(--add-input-color);
@@ -29,8 +30,20 @@
     border: none;
     color: var(--add-button-text-color);
     font-weight: 550;
+    padding: 0 1.5rem;
     &:hover {
       background-color: var(--add-button-hover-color);
+    }
+  }
+}
+@media (max-width: 500px) {
+  .add-todo {
+    margin: 0 10vw !important;
+    input {
+      width: calc(80vw - 100px) !important;
+    }
+    button {
+      width: 5vw !important;
     }
   }
 }

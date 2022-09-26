@@ -13,7 +13,7 @@ function ToDoList({ todos, setTodos }) {
   };
   return (
     <div className="todos-container">
-      {todos.length == 0 ? (
+      {todos.length === 0 ? (
         <span className="no-todos">NO TODOS, YAY</span>
       ) : (
         <ul className="todos">

@@ -105,3 +105,9 @@ p {
     margin: 20px 0;
   }
 }
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 2rem !important;
+  }
+}
